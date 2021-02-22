@@ -39,6 +39,8 @@ body {
   align-items: center;
   height: 4rem; 
   background-color: var(--light-red);
+  position: fixed; 
+  width: 100%; 
 }
 
 .links {
@@ -57,7 +59,7 @@ body {
 }
 
 .section {
-  height: 90vh;
+  height: 100vh;
 }
 
 #welcome-section {
