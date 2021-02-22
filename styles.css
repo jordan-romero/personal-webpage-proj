@@ -41,6 +41,7 @@ body {
   background-color: var(--light-red);
   position: fixed; 
   width: 100%; 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
 }
 
 .links {
@@ -95,6 +96,8 @@ body {
     rgba(94, 74, 227, 0.8));
     height: 100vh; 
     padding: 2rem; 
+
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, .25);
 }
 
 @media only screen and (max-width: 800px) {
@@ -148,7 +151,41 @@ body {
 }
 
 #contact {
-  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, .4);
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, .25);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh; 
+}
+
+.footer-header {
+  font-family: var(--space);
+  letter-spacing: .3rem;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--light-blue);
+  padding: 3rem;
+  padding-bottom: 1rem; 
+}
+
+.footer-sub-header {
+  font-family: var(--work);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+#profile-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+#profile-link:hover {
+  transform: scale(1.5);
+  color: var(--dark-red);
 }
 
 /* ANIMATIONS */
