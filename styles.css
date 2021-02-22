@@ -33,6 +33,29 @@ body {
     color: var(--white);
 }
 
+#navbar {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem; 
+  background-color: var(--light-red);
+}
+
+.links {
+  width: 40%; 
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav-link:hover {
+  transform: scale(1.5);
+}
+
 .section {
   height: 90vh;
 }
