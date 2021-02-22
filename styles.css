@@ -33,9 +33,13 @@ body {
     color: var(--white);
 }
 
+.section {
+  height: 90vh;
+}
+
 #welcome-section {
     position: relative;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .headers {
@@ -56,7 +60,56 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--dark-red);
-    animation: blink-2 1s; 
+    animation: blink-2 1s 1s; 
+}
+
+#projects {
+  background-image: linear-gradient(
+    to right bottom, 
+    rgba(68, 157, 209, 0.8),
+    rgba(94, 74, 227, 0.8));
+    height: 100vh; 
+}
+
+.cards {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  height: 19rem;
+  width: 17rem;
+}
+
+.card__img {
+  height: 80%;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card__footer {
+  background-color: var(--light-red);
+  height: 20%;
+  margin-top: -1rem;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card__link {
+  text-decoration: none;
+  color: var(--dark-gray)
+}
+
+.card__link:hover {
+  text-shadow: 2px 2px rgba(0, 0, 0, .2);
+  transform: scale(1.1);
 }
 
 /* ANIMATIONS */
